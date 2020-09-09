@@ -152,10 +152,10 @@ RouterPlugin.install = function (vue, router, store, i18n) {
                 aRouter.push(oRouter)
             }
             if (first) {
-                if (!this.routerList.includes(aRouter[0][propsDefault.path])) {
+                // if (!this.routerList.includes(aRouter[0][propsDefault.path])) {
                     this.safe.$router.addRoutes(aRouter)
                     this.routerList.push(aRouter[0][propsDefault.path])
-                }
+                // }
             } else {
                 return aRouter
             }
