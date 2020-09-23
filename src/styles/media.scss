@@ -55,6 +55,14 @@
     height: calc(100% - 70px);
     box-sizing: border-box;
     overflow: hidden;
+        >.el-scrollbar{
+        >.el-scrollbar__wrap{
+            overflow-x: hidden;
+            >.el-scrollbar__view{
+                height: auto;
+            }
+        }
+    }
 }
 
 .avue-view {
