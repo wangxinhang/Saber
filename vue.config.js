@@ -17,9 +17,9 @@ module.exports = {
     entry
       .add('classlist-polyfill')
       .end()
-    entry
-      .add('@/mock')
-      .end()
+    // entry
+    //   .add('@/mock')
+    //   .end()
   },
   devServer: {
     // 端口配置
