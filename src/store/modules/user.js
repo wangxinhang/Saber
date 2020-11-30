@@ -114,7 +114,7 @@ const user = {
     // 登出
     LogOut({commit}) {
       return new Promise((resolve, reject) => {
-        logout().then(() => {
+        // logout().then(() => {
           commit('SET_TOKEN', '');
           commit('SET_MENU', [])
           commit('SET_MENU_ALL', []);
@@ -123,9 +123,9 @@ const user = {
           commit('CLEAR_LOCK');
           removeToken()
           resolve()
-        }).catch(error => {
-          reject(error)
-        })
+        // }).catch(error => {
+        //   reject(error)
+        // })
       })
     },
     //注销session
